@@ -1,6 +1,7 @@
 // let input= document.querySelector('.input');
 let buttons = document.querySelectorAll('.button');
 let string = "";
+
 Array.from(buttons).forEach((button) => {
     button.addEventListener('click', (e) => {
         if (e.target.innerHTML == '=') {
@@ -14,6 +15,10 @@ Array.from(buttons).forEach((button) => {
         else if (e.target.innerHTML == 'DEL') {
             string = string.substring(0, string.length-1);
             document.querySelector('input').value = string;
+        }
+        else if(e.target.innerHTML == '%'){
+            string = (string/100);
+                document.querySelector('input').value=string + "%";
         }
 
         else {

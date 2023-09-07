@@ -37,8 +37,9 @@ input {
     width: 340px;
     padding: 20px;
     background: transparent;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid grey;
+    border-radius: 15px;
+   box-shadow: 4px 2px 5px gray; 
     font-size: 35px;
     color: white;
     font-weight: 400;
