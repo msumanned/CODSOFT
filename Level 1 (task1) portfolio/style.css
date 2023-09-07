@@ -93,7 +93,11 @@ header .menu_list{
     border-radius: 3px;
     display: none;
 }
+.menu_list a:active{  
+    color: var(--main-color);
+    text-shadow: 0px 0px 10px #ffab01;
 
+}
 .menu_list a:hover {
     color: var(--main-color);
     transition: all .50s ease;
