@@ -175,30 +175,34 @@ header .menu_list{
     transition: all .40s ease;
     background: transparent;
 }
-
+.passion{
+    display: flex;
+    text-align: left;
+}
 
 .passion h4 {
     font-size: 25px;
     letter-spacing: 2px;
-    color: var(--bg-color);
     text-transform: uppercase;
-    -webkit-text-stroke: 0.5px #ffab01;
+    -webkit-text-stroke: 0.3px #ffab01;
     position: relative;
+    /* overflow: hidden; */
 }
 
 .passion h4::before {
     color: var(--main-color);
+    position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
     overflow: hidden;
-    position: absolute;
     content: attr(data-text);
     -webkit-text-stroke: 0px #ffab01;
     border-right: 1px solid white;
     animation: animate 9s linear infinite;
 }
+
 
 @keyframes animate {
 
@@ -208,7 +212,7 @@ header .menu_list{
         width: 0;
     }
 
-    60%,
+    70%,
     100% {
         width: 100%;
     }
@@ -712,7 +716,7 @@ footer .footer_content {
 }
 @media(max-width:590px){
     .passion h4 {
-        font-size: 12px;
+        font-size: 10px;
     }
     .footer_content{
         font-size: 12px;
