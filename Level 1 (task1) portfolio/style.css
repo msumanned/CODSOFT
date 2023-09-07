@@ -179,6 +179,7 @@ header .menu_list{
 
 .passion h4 {
     font-size: 25px;
+    letter-spacing: 2px;
     color: var(--bg-color);
     text-transform: uppercase;
     -webkit-text-stroke: 0.5px #ffab01;
@@ -709,7 +710,7 @@ footer .footer_content {
     padding: 8px;
 }
 }
-@media(max-width:510px){
+@media(max-width:590px){
     .passion h4 {
         font-size: 12px;
     }
