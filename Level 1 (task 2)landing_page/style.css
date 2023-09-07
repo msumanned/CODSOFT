@@ -351,7 +351,7 @@ footer {
 .footer-content h4 {
     font-weight: 700;
     line-height: 3em;
-    color: rgba(29, 29, 29, 1);
+    color: var(--heading-color);
 
 }
 
@@ -361,6 +361,7 @@ footer h6{
     line-height: 3em;
     color: rgb(29, 29, 29);
 }
+
 .footer-links ul{
     list-style: none;
     padding-left: 0px;
@@ -383,7 +384,7 @@ footer h6{
 }
  .icon i{
     color: var(--main-color);
-    margin:0 20px 0 0 ;
+    padding:0 20px;
     line-height: 1em;
     cursor: pointer;
 }
@@ -419,6 +420,18 @@ footer h6{
     h1{
         font-size: 36px;
     }
+    /* footer */
+    footer .footer-padding
+    {
+        text-align: center;
+    }
+footer .icon , .call, .email, .location{
+    justify-content: center;
+}
+footer .icon i{
+   padding: 0 10px;
+}
+    
 }
 @media (max-width: 580px){
     h1{
