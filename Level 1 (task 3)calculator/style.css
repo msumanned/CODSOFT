@@ -64,6 +64,10 @@ input::placeholder {
     font-size: 24px;
     font-weight: 400;
 }
+.last_line{
+    display: flex;
+    flex-direction: row;
+}
 
 .operator {
     color: hsl(228, 100%, 79%);
@@ -72,4 +76,5 @@ input::placeholder {
 .equal{
     background-color: hsl(228, 100%, 79%);
     color: whitesmoke;
+    width: 100%;
 }
