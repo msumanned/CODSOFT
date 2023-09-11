@@ -56,8 +56,9 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1;
     background-color: var(--bg-color);
+  
 }
 
 header .nav-content {
@@ -422,10 +423,16 @@ footer h6{
 
 
 /* media query */
+@media(max-width: 980px){
+    header ul li{
+        text-align: center;
+    }
+}
 @media (max-width:770px){
     h1{
         font-size: 36px;
     }
+   
     /* footer */
     footer .footer-padding
     {

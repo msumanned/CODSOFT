@@ -1,5 +1,5 @@
 let sections = document.querySelectorAll('section');
-let menu_lists = document.querySelectorAll('.nav-content ul li a');
+let list = document.querySelectorAll('header ul li a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -9,9 +9,9 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height) {
-            menu_lists.forEach(links => {
+            list.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('.nav-content ul li a[href*= '+ id +']').classList.add('active');
+                document.querySelector('header ul li a[href*= '+ id +']').classList.add('active');
             });
         }
     });
